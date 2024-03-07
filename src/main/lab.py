@@ -1,6 +1,6 @@
 def factorial(n):
     """
-    Let's try using a for loop to calculate the factorial of a number.
+    Calculate the factorial of a non-negative integer using a for loop.
 
     The factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n.
     For example:
@@ -14,11 +14,12 @@ def factorial(n):
     if n < 0:
         raise ValueError("Factorial is not defined for negative numbers.")
     
-    # Initialize the result variable to store the factorial value    
-    # Iterate through numbers from 1 to n (inclusive)
-
-    # Write your code here
+    # Initialize the result variable to store the factorial value
+    result = 1
     
-
+    # Iterate through numbers from 1 to n (inclusive)
+    for i in range(1, n + 1):
+        result *= i  # Multiply each number to the result
+    
     # Return the calculated factorial value
     return result
